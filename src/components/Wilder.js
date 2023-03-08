@@ -1,5 +1,6 @@
 import blank_profile from "../assets/blank_profile.png";
 import Skill from "./Skill";
+import "../css/Wilder.css";
 const Wilder = ({ data }) => {
   const listSkills = data.skills.map((skill, index) => (
     <Skill skill={skill} key={index} />

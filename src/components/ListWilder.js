@@ -1,5 +1,5 @@
 import Wilder from "./Wilder";
-
+import "../css/ListWilder.css";
 const ListWilder = ({ wildersData }) => {
   const listWilders = wildersData.map((wilder, index) => (
     <Wilder data={wilder} key={index} />

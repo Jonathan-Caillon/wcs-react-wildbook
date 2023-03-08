@@ -1,4 +1,4 @@
-import "./App.css";
+import "./css/App.css";
 import ListWilder from "./components/ListWilder";
 import wildersData from "./assets/dataWilder";
 
