@@ -1,10 +1,6 @@
-import blank_profile from "../assets/blank_profile.png";
-import Skill from "./Skill";
-import "../css/Wilder.css";
-const Wilder = ({ data }) => {
-  const listSkills = data.skills.map((skill, index) => (
-    <Skill skill={skill} key={index} />
-  ));
+import blank_profile from "../../assets/blank_profile.png";
+import "./WilderCard.css";
+const WilderCard = ({ data }) => {
   return (
     <article className="card">
       <img src={blank_profile} alt={`${data.name} Profile`} />
@@ -17,9 +13,16 @@ const Wilder = ({ data }) => {
         commodo consequat.
       </p>
       <h4>Wild Skills</h4>
-      <ul className="skills">{listSkills}</ul>
+      <ul className="skills">
+        {data.skills.map((skill, index) => (
+          <li key={index}>
+            {skill.title}
+            <span className="votes">{skill.votes}</span>
+          </li>
+        ))}
+      </ul>
     </article>
   );
 };
 
-export default Wilder;
+export default WilderCard;
