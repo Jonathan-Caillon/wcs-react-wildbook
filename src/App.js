@@ -1,5 +1,5 @@
 import "./App.css";
-import wildersData from "./assets/dataWilder";
+import wildersData from "./dataWilder";
 import { WilderGrid, Header, Footer } from "./components";
 function App() {
   return (
