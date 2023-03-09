@@ -1,6 +1,8 @@
 import { WilderCard } from "../index";
 import "./WilderGrid.css";
-const WilderGrid = ({ wildersData }) => {
+import wildersData from "./dataWilder";
+
+const WilderGrid = () => {
   return (
     <main className="container">
       <h2>Wilders</h2>
